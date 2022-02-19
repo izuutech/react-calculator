@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Clear from "./components/Clear";
+import Numbers from "./components/Numbers";
+import Operator from "./components/Operators";
+import Screen from "./components/Screen";
+import Side from "./components/Side";
+import NumberContextProvider from "./contexts/NumberContext";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NumberContextProvider>
+      <Screen/>
+      <div className="surround">
+     <Numbers/>
+     <Side/>
+     </div>
+     <Operator/>
+     <Clear/>
+     </NumberContextProvider>
     </div>
   );
 }

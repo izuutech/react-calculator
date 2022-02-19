@@ -1,0 +1,226 @@
+.App{
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    max-height: 95vh;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+.screen{
+    width: 100%;
+    min-height: 20vw;
+    background-color:royalblue;
+    /* white-space: nowrap; */
+}
+.screen .screenSpace{
+    width: 90%;
+    margin-left: 5%;
+}
+.screen .operating{
+    max-width: 90%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3vh;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 5vw;
+    background-color:royalblue;
+    border: none;
+    
+    
+    outline: none;
+    text-align: right;
+    direction: rtl;
+    
+}
+.screen .result{
+    max-width: 90%;
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+    font-size: 5vw;
+   
+    background-color:royalblue;
+    border: none;
+    text-align: right;
+    outline: none;
+}
+
+
+/* surround design */
+.surround{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30vh;
+    overflow: hidden;
+}
+
+
+/* side design */
+.side{
+    width: 25%;
+    height: 50vh;
+    
+}
+.side .percent{
+    width: 100%;
+    height: 15vh;
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.side .equality{
+    cursor: pointer;
+    width: 100%;
+    height: 15vh;
+    background-color: royalblue;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+}
+
+.Numbers{
+    width: 75%;
+    height: 40vh;
+}
+.Numbers .topN{
+    width: 100%;
+    color: #aaa;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Numbers .middleN{
+    width: 100%;
+    color: #aaa;
+    display: flex;
+    flex-direction: row;
+}
+
+.Numbers .bottomN{
+    width: 100%;
+    color: #aaa;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Numbers .eachNumber{
+    width: 33vw;
+    height: 10vh;
+    margin-bottom: 2px;
+    margin-left: 1%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: white;
+}
+
+.Numbers .eachNumber:hover{
+    animation-name: slowChange;
+    animation-duration: 1s;
+}
+
+
+.operator{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+}
+.operator .sign{
+    width: 25%;
+    height: 10vh;
+    color: royalblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.operator .sign:hover{
+    animation-name: slowChange;
+    animation-duration: 1s;
+}
+
+
+
+
+
+
+
+
+
+.Clear{
+    width: 100%;
+    color: #aaa;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Clear .eachClear{
+    width: 33vw;
+    height: 10vh;
+    margin-bottom: 2px;
+    color: royalblue;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: white;
+}
+
+.Clear .eachClear:hover{
+    animation-name: slowChange;
+    animation-duration: 1s;
+}
+
+
+@keyframes slowChange {
+    from {background-color: white;}
+    to {background-color: royalblue; color: white;}
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .screen{
+        width: 100%;
+        min-height: 15vh;
+    }
+    
+    .side .percent{
+        height: 15vh;
+    }
+    
+    .side .equality{
+        height: 15vh;
+    }
+    .Numbers .eachNumber{
+        height: 12vh;
+    }
+    .surround{
+        height: 40vh;
+    }
+    .operator .sign{
+        height: 12vh;
+    }
+    .Clear .eachClear{
+        height: 12vh;
+    }
+}
