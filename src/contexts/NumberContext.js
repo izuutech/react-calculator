@@ -85,7 +85,7 @@ display number or sign(operator) on screen
             ...this.state,
             num: [],
             isNum: true,
-            answer: []
+            answer: [0]
         });  
         
             //console.log(this.state.num.indexOf(numbr))
